@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="icon" href="./assets/icons/icon.svg">
+    <!-- CDN Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS style -->
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section id="student-list">
+             <div class="wrapper flex">
+                    <aside class="bg-[#F2EAE1] w-[340px] px-[30px] pt-[18px] pb-[20px] h-screen flex flex-col justify-between">
+                        <div>
+                            <h1 class="student-title relative text-[20px] font-bold">CRUD OPERATIONS</h1>
+                            <ul class="nav__list flex flex-col font-medium mt-6 gap-y-2">
+                              
+                            </ul>
+                        </div>
+                        <button class="log_out hover:bg-[#FEAF00] transition flex gap-x-[23px] font-medium items-center bg-white rounded-md border p-3">Logout <img src="./assets/icons/logout.svg" alt="logout"></button>
+                    </aside>
+             
+             
+                    <div class="w-full bg-slate-300 p-[10px]">
+                        <header class="flex justify-between items-center h-[10%] px-[20px] bg-white rounded-lg mb-1">
+                            <img class="cursor-pointer" src="./assets/icons/back.svg" alt="back">
+                           
+                            <div class="flex items-center gap-x-[27px] bg-white">
+                                <div class="flex items-center border-[#E5E5E5] border-[1px] rounded-lg p-[11px]">
+                                    <input class="outline-none" type="text" placeholder="Search...">
+                                    <img src="./assets/icons/search.svg" alt="search">
+                                </div>
+                                <img src="./assets/icons/bell.svg" alt="bell">
+                            </div>
+                        </header>
+                        <div class="border bg-white rounded-lg w-full h-[90%]">
+
+                        </div>
+                    </div>
+                   
+                </div>
+        </section>
+    </main>
+</body>
+
+<!-- Scripts js -->
+
+<script type="module" src="./js/script.js"></script>
+
+</html>

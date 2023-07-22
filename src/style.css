@@ -1,0 +1,42 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+
+#login-body{
+    background: linear-gradient(49deg, #FEAF00 0%, #F8D442 100%);
+}
+
+.title-login::before{
+    content: "";
+    width: 4px;
+    height: 39px;
+    background-color: #F8D442;
+    position: absolute;
+    top: 5px;
+    left: 26px;
+}
+
+.student-title::before{
+    content: "";
+    width: 4px;
+    height: 20px;
+    background-color: #F8D442;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+}
+
+.nav__list li:hover{
+    background-color: #FEAF00;
+    transition: all 0.3s ease;
+}

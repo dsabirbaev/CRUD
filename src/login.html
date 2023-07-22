@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD | Login</title>
+    <link rel="icon" href="./assets/icons/icon.svg">
+    <!-- CDN Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS style -->
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="login-body">
+    <main>
+        <section id="login">
+            <div class="container mx-auto px-5 grid place-items-center h-screen">
+                <div class="wrapper w-[475px] h-[550px]  bg-white rounded-[20px]  px-[30px] py-[40px]">
+                    <h1 class="title-login relative text-[32px] font-bold text-center mb-[43px]">CRUD OPERATIONS</h1>
+                    <h4 class="text-[22px] uppercase font-semibold text-center">Sign In</h4>
+                    <h5 class="text-[#6C6C6C] text-center text-[14px] mb-[40px]">Enter your credentials to access your account</h5>
+                    <form action="#" class="login_form flex flex-col gap-y-5 mb-[20px]">
+                        <label for="email">
+                            <p class="mb-[10px] font-medium text-[#6C6C6C]">Email</p>
+                            <input class="w-full rounded border-[#E5E5E5] border outline-none p-[15px]" type="text" name="email" id="email" placeholder="Enter your email"  required>
+                        </label>
+                        <label for="password">
+                            <p class="mb-[10px] font-medium text-[#6C6C6C]">Password</p>
+                            <input class="w-full rounded border-[#E5E5E5] border outline-none p-[15px]" type="password" name="password" id="password" placeholder="Enter your password"  required>
+                        </label>
+                        <button type="submit" class="bg-[#FEAF00] font-medium text-white  py-[14px] rounded transition hover:bg-[#feae00c2]">SIGN IN</button>
+                    </form>
+
+                    <p class="text-[#6C6C6C] text-center">Forgot your password? <a href="#" class="text-[#FEAF00]">Reset Password</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<!-- Scripts js -->
+<script type="module" src="./js/auth.js"></script>
+</html>
