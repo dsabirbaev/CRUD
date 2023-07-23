@@ -2,18 +2,13 @@
 
 
 import {$} from "./utils.js";
-
+import renderAddForm from "./modalAdd.js";
 
 const modalWindow = $('.crud_body').addEventListener('click', (e) => {
     if(e.target.classList.contains('add_student')){
         $(".modal-wrapper").classList.remove('hidden');
+        renderAddForm()
     }
-})
-
-
-
-$("#close").addEventListener('click', () => {
-    $(".modal-wrapper").classList.add('hidden');
 })
 
 window.addEventListener('click', (e) => {
