@@ -19,38 +19,57 @@
 </head>
 
 <body>
+    <div class="modal-wrapper hidden w-full h-full bg-[rgba(0,0,0,0.4)] fixed top-0 left-0 z-50 backdrop-blur-[10px] grid place-items-center">
+        <div class="modal-content w-[450px] bg-white rounded-lg px-5 py-6 pt-10 relative">
+          <div>
+            <img id="close" title="close" src="./assets/icons/close.svg" alt="close" class="absolute top-2 right-2 cursor-pointer">
+            <form class="flex flex-col gap-y-2">
+                <input type="text" placeholder="Name" class="border rounded p-2 w-full outline-none">
+                <input type="email" placeholder="Email" class="border rounded p-2 w-full outline-none">
+                <input type="tel" placeholder="Phone" class="border rounded p-2 w-full outline-none">
+                <input type="text" placeholder="Enroll number" class="border rounded p-2 w-full outline-none">
+                <input type="date" placeholder="Date" class="border rounded p-2 w-full outline-none">
+                <button type="submit" class="bg-[#FEAF00] p-2 outline-none font-semibold text-[16px] rounded border transition hover:bg-white hover:border hover:border-[#FEAF00]">Add student</button>
+            </form>
+          </div>
+        </div>
+    </div>
     <main>
         <section id="student-list">
-             <div class="wrapper flex">
-                    <aside class="bg-[#F2EAE1] w-[340px] px-[30px] pt-[18px] pb-[20px] h-screen flex flex-col justify-between">
-                        <div>
-                            <h1 class="student-title relative text-[20px] font-bold">CRUD OPERATIONS</h1>
-                            <ul class="nav__list flex flex-col font-medium mt-6 gap-y-2">
-                              
-                            </ul>
-                        </div>
-                        <button class="log_out hover:bg-[#FEAF00] transition flex gap-x-[23px] font-medium items-center bg-white rounded-md border p-3">Logout <img src="./assets/icons/logout.svg" alt="logout"></button>
-                    </aside>
-             
-             
-                    <div class="w-full bg-slate-300 p-[10px]">
-                        <header class="flex justify-between items-center h-[10%] px-[20px] bg-white rounded-lg mb-1">
-                            <img class="cursor-pointer" src="./assets/icons/back.svg" alt="back">
-                           
-                            <div class="flex items-center gap-x-[27px] bg-white">
-                                <div class="flex items-center border-[#E5E5E5] border-[1px] rounded-lg p-[11px]">
-                                    <input class="outline-none" type="text" placeholder="Search...">
-                                    <img src="./assets/icons/search.svg" alt="search">
-                                </div>
-                                <img src="./assets/icons/bell.svg" alt="bell">
-                            </div>
-                        </header>
-                        <div class="border bg-white rounded-lg w-full h-[90%]">
+            <div class="wrapper flex">
+                <aside
+                    class="bg-[#F2EAE1] w-[20%] px-[30px] pt-[18px] pb-[20px] h-screen flex flex-col justify-between">
+                    <div>
+                        <h1 class="student-title relative text-[20px] font-bold">CRUD OPERATIONS</h1>
+                        <ul class="nav__list flex flex-col font-medium mt-6 gap-y-2">
 
-                        </div>
+                        </ul>
                     </div>
-                   
+                    <button
+                        class="log_out hover:bg-[#FEAF00] transition flex gap-x-[23px] font-medium items-center bg-white rounded-md border p-3">Logout
+                        <img src="./assets/icons/logout.svg" alt="logout"></button>
+                </aside>
+
+
+                <div class="w-full bg-slate-300 p-[10px] max-w-[80%]">
+                    <header class="flex justify-between items-center h-[10%] px-[20px] bg-white rounded-lg mb-1">
+                        <img class="cursor-pointer" src="./assets/icons/back.svg" alt="back">
+
+                        <div class="flex items-center gap-x-[27px] bg-white">
+                            <div class="flex items-center border-[#E5E5E5] border-[1px] rounded-lg p-[11px]">
+                                <input class="outline-none" type="text" placeholder="Search...">
+                                <img src="./assets/icons/search.svg" alt="search">
+                            </div>
+                            <img src="./assets/icons/bell.svg" alt="bell">
+                        </div>
+                    </header>
+                    <div class="crud_body border bg-white rounded-lg w-full h-[90%]">
+                       
+
+                    </div>
                 </div>
+
+            </div>
         </section>
     </main>
 </body>
