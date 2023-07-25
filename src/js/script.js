@@ -4,9 +4,17 @@ import logOut from "./module/logout.js";
 import homeRender from "./module/renderHome.js";
 import renderStudents from "./module/renderStudents.js";
 
+// render modal window and createpost 
 import modalWindow from "./module/modalWindow.js";
 import createPost from "./module/postStudent.js";
+
+// render delete modal and delete 
+import renderDelete from "./module/modalDelete.js";
 import deleteStudent from "./module/deleteStudent.js";
+
+// render edit modal and edit
+import renderEdit from "./module/modalEdit.js";
+import updateStudent from "./module/editStudent.js";
 
 
 

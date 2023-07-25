@@ -4,14 +4,6 @@ import {$} from "./utils.js";
 
 const baseURL = "http://localhost:3000";
 
-import renderDelete from "./modalDelete.js";
-
-const del = $('.crud_body').addEventListener('click', (e) => {
-    if(e.target.classList.contains('delete-btn')){
-        $(".modal-wrapper").classList.remove('hidden');
-        renderDelete()
-    }
-})
 
 
 let id;

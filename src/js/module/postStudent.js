@@ -16,17 +16,15 @@ function createPost(){
         date: $("#date").value
     }
 
-    if(!newPost.name.trim().length){
-        alert('Please enter the text!')
-    }else{
-        fetch(`${baseURL}/posts`, {
-            method: 'POST',
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: TO_JSON(newPost)
-        })
-    }
+    
+    fetch(`${baseURL}/posts`, {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: TO_JSON(newPost)
+    })
+    
 
     
 }
