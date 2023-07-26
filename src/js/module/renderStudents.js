@@ -6,7 +6,7 @@ import {$, createElement} from "./utils.js";
 
 ///////////////  GET posts /////////////////////////
 
-const baseURL = "http://localhost:3000";
+const baseURL = "https://api-yrsv.onrender.com";
 
 async function getPosts(){
     try{
@@ -17,7 +17,7 @@ async function getPosts(){
     }catch(err){
         console.log(err.message)
     }finally{
-        console.log('success')
+        
     }
 }
 
