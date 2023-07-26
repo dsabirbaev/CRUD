@@ -6,6 +6,7 @@ import {$} from "./utils.js";
 
 
 $('.crud_body').addEventListener('click', (e) => {
+    e.preventDefault()
     if(e.target.classList.contains('delete-btn')){
         $(".modal-wrapper").classList.remove('hidden');
         renderDelete()

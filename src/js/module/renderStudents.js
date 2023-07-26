@@ -26,8 +26,10 @@ async function getPosts(){
 
 
 $('.nav__list').addEventListener('click', (e) => {
+    e.preventDefault()
     if(e.target.classList.contains('students')){
         $('.crud_body').innerHTML = "";
+        localStorage.setItem('itemClicked', 'students');
         setHTML()
         getPosts()
         
@@ -35,8 +37,14 @@ $('.nav__list').addEventListener('click', (e) => {
 })
 
 
+if (localStorage.getItem('itemClicked') == 'students') {
+    setHTML()
+    getPosts()    
+}
+
+
 function setHTML(){
-    $('.crud_body').innerHTML = `
+    $('.crud_body').innerHTML += `
     <div class="p-[10px]">
         <div class="students_header flex items-center justify-between">
             <h2 class="font-bold text-[22px] ">Students List</h2>

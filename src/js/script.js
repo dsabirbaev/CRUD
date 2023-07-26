@@ -17,6 +17,13 @@ import renderEdit from "./module/modalEdit.js";
 import updateStudent from "./module/editStudent.js";
 
 
+// The rest of sections
+
+import showHome from "./module/renderPayment.js";
+import showReport from "./module/renderReport.js";
+import showSetting from "./module/renderSetting.js";
+import showCorse from "./module/renderCorse.js";
+
 
 
 

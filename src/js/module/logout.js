@@ -1,7 +1,8 @@
 
 import {$} from "./utils.js";
 
-$('.log_out').addEventListener('click', () => {
+$('.log_out').addEventListener('click', (e) => {
+    e.preventDefault()
     window.location.href = "./login.html";
     localStorage.clear();
 })

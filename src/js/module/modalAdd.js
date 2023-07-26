@@ -20,6 +20,7 @@ function renderAddForm(){
 }
 
 $('.modal-content').addEventListener('click', (e) => {
+    
     if(e.target.classList.contains('close')){
         $(".modal-wrapper").classList.add('hidden');
     }

@@ -21,6 +21,7 @@ function auth() {
 
             if (data.access_token && data.statusCode != 401) {
                 localStorage.setItem("token", data?.access_token);
+                localStorage.setItem('itemClicked', 'home');
                 window.location.href = "./index.html";
             } else {
                 alert("Error: " + data.message);
@@ -34,5 +35,4 @@ function auth() {
 $('.login_form').addEventListener('submit', (e) => {
     e.preventDefault()
     auth()
-
 })

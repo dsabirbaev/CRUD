@@ -1066,9 +1066,9 @@ body{
   transition: all 0.3s ease;
 }
 
-.nav__list a:focus{
-  background-color: #FEAF00;
-}
+/* .nav__list a:focus{
+    background-color: #FEAF00;
+} */
 
 .bg_card{
   background: linear-gradient(134deg, #FEAF00 0%, #F8D442 100%);
@@ -1086,6 +1086,10 @@ body{
   position: absolute;
   top: 112%;
   left: 0;
+}
+
+.active_nav{
+  background-color: #FEAF00 !important;
 }
 
 .hover\:border:hover {
