@@ -935,12 +935,21 @@ video {
   padding-top: 18px;
 }
 
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-right {
   text-align: right;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-\[12px\] {
@@ -1004,6 +1013,11 @@ video {
 .text-\[\#FEAF00\] {
   --tw-text-opacity: 1;
   color: rgb(254 175 0 / var(--tw-text-opacity));
+}
+
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .text-white {
