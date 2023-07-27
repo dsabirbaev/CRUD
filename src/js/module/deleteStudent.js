@@ -4,7 +4,7 @@ import {$} from "./utils.js";
 
 const baseURL = "https://api-yrsv.onrender.com";
 
-
+import {setHTML, getPosts} from "./renderStudents.js"
 
 let id;
 
@@ -16,7 +16,13 @@ function deleteStudent(id){
                 "Content-Type": "application/json",
             }
         })
+        .then((res) => res.json())
+        .then( ()=> {
+            setHTML();
+            getPosts();
+        })
     }
+
 }
 
 $(".crud_body").addEventListener('click', (e) => {
@@ -29,9 +35,12 @@ $(".crud_body").addEventListener('click', (e) => {
 $(".modal-content").addEventListener('click', (e) => {
     if(e.target.classList.contains('yes')){
         deleteStudent(id)
+       
+        $(".modal-wrapper").classList.add('hidden');
     }
     if(e.target.classList.contains('no')){
         $(".modal-wrapper").classList.add('hidden');
+      
     }
         
     

@@ -12,7 +12,7 @@ function renderAddForm(){
             <input id="phone"   type="tel" placeholder="Phone" class="border rounded p-2 w-full outline-none" required>
             <input id="number" type="text" placeholder="Enroll number" class="border rounded p-2 w-full outline-none" required>
             <input id="date" type="date" placeholder="Date" class="border rounded p-2 w-full outline-none required" required>
-            <button type="submit" class="bg-[#FEAF00] p-2 outline-none font-semibold text-[16px] rounded border transition hover:bg-white hover:border hover:border-[#FEAF00]">Add student</button>
+            <button type="submit" class="modal_add bg-[#FEAF00] p-2 outline-none font-semibold text-[16px] rounded border transition hover:bg-white hover:border hover:border-[#FEAF00]">Add student</button>
         </form>
     </div>
     
@@ -25,5 +25,15 @@ $('.modal-content').addEventListener('click', (e) => {
         $(".modal-wrapper").classList.add('hidden');
     }
 })
+
+
+$('.modal-content').addEventListener('click', (e) => {
+    
+    if(e.target.classList.contains('modal_add')){
+        $(".modal-wrapper").classList.add('hidden');
+    }
+})
+
+
 
 export default renderAddForm

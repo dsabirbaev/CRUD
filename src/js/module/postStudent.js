@@ -2,7 +2,7 @@
 
 
 import {$, TO_JSON} from "./utils.js";
-
+import { setHTML, getPosts } from "./renderStudents.js";
 
 const baseURL = "https://api-yrsv.onrender.com";
 
@@ -23,6 +23,9 @@ function createPost(){
             "Content-Type": "application/json",
         },
         body: TO_JSON(newPost)
+    }).then((res) => res.json()).then(()=> {
+        setHTML();
+        getPosts();
     })
     
 
@@ -37,6 +40,7 @@ $('.crud_body').addEventListener('click', (e) => {
         $("#post_student").addEventListener('submit', (e) => {
             e.preventDefault();
             createPost()
+           
         })
 
     }

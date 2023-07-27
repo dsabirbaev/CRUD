@@ -44,6 +44,7 @@ if (localStorage.getItem('itemClicked') == 'students') {
 
 
 function setHTML(){
+    $('.crud_body').innerHTML = "";
     $('.crud_body').innerHTML += `
     <div class="p-[10px]">
         <div class="students_header flex items-center justify-between">
@@ -72,6 +73,7 @@ function setHTML(){
 }
 
 function renderStudents(data){
+   
     if(data.length){
         data.forEach(item => {
             const studentItem = createElement('li', 'flex items-center justify-between px-[30px] py-[20px] border rounded-md', `  
@@ -97,3 +99,5 @@ function renderStudents(data){
 
 
 export default renderStudents
+
+export {setHTML, getPosts}
